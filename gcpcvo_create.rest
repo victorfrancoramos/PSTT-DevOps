@@ -1,0 +1,49 @@
+{
+  "name": "gcpcvo",
+  "volume": {
+    "exportPolicyInfo": {
+      "policyType": "custom",
+      "ips": [
+        "10.150.0.0/20"
+      ],
+      "nfsVersion": [
+        "nfs3",
+        "nfs4"
+      ]
+    },
+    "snapshotPolicyName": "default",
+    "name": "gcpcvo_nfsvol",
+    "enableThinProvisioning": true,
+    "enableDeduplication": true,
+    "enableCompression": true,
+    "size": {
+      "size": 5,
+      "unit": "GB"
+    }
+  },
+  "tenantId": "workspace-aLo6Lml6",
+  "region": "us-east4-a",
+  "packageName": "gcp_poc",
+  "dataEncryptionType": "GCP",
+  "gcpServiceAccount": "occmservice@occm-dev.iam.gserviceaccount.com",
+  "vsaMetadata": {
+    "ontapVersion": "ONTAP-9.9.0.T1.gcp",
+    "licenseType": "gcp-cot-explore-paygo",
+    "instanceType": "custom-4-16384"
+  },
+  "writingSpeedState": "NORMAL",
+  "subnetPath": "https://www.googleapis.com/compute/v1/projects/default-project/regions/us-east4/subnetworks/default",
+  "subnetId": "https://www.googleapis.com/compute/v1/projects/default-project/regions/us-east4/subnetworks/default",
+  "svmPassword": "Netapp1!",
+  "vpcId": "default",
+  "gcpVolumeSize": {
+    "size": 500,
+    "unit": "GB",
+    "_identifier": "500 GB"
+  },
+  "gcpVolumeType": "pd-ssd",
+  "gcpLabels": [],
+  "project": "default-project",
+  "backupVolumesToCbs": true,
+  "enableCompliance": false
+}
